@@ -1,4 +1,4 @@
-FROM llxx
+FROM ubantu
 
 ADD index.html /www/index.html
 
