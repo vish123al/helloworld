@@ -1,2 +1,2 @@
-FROM vish123al
+FROM hello-world
 CMD ["/hello"]
