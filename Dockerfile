@@ -1,2 +1,3 @@
-FROM vishaldenge/helloworld
-RUN echo 'we are running some # of cool things'
+FROM scratch
+COPY hello /
+CMD ["/hello"]
