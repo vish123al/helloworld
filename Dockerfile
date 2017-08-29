@@ -1,1 +1,2 @@
-FROM 
+FROM ubantu
+echo "hello world"
