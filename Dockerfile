@@ -1,4 +1,4 @@
-FROM busybox
+FROM llxx
 
 ADD index.html /www/index.html
 
