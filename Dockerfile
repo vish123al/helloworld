@@ -1,4 +1,4 @@
-FROM ubantu
+FROM busybox
 MAINTAINER vishaldenge1@gmail.com
 ADD index.html /www/index.html
 
