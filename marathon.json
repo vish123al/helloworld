@@ -1,9 +1,9 @@
 {
-  "id": "helloworld",
+  "id": "vishaldenge",
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "vishaldenge/helloworld",
+      "image": "helloworld",
       "network": "BRIDGE",
       "portMappings": [
         {
