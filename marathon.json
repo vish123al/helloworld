@@ -1,39 +1,27 @@
 {
   "id": "helloworld",
+  "cpus": 0.5,
+  "mem": 64.0,
+  "instances": 1,
   "container": {
     "type": "DOCKER",
     "docker": {
       "image": "vishaldenge/helloworld",
       "network": "BRIDGE",
       "portMappings": [
-        {
-          "hostPort": 80,
-          "containerPort": 80,
-          "protocol": "tcp"
-        }
+        { "containerPort": 8080, "hostPort": 0, "servicePort": 9000, "protocol": "tcp" },
+        { "containerPort": 161, "hostPort": 0, "protocol": "udp"}
       ]
     }
   },
-  "acceptedResourceRoles": [
-    "slave_public"
-  ],
-  "labels": {
-    "lastChangedBy": "vishaldenge1@gmail.com"
-  },
-  "instances": 1,
-  "cpus": 0.1,
-  "mem": 128,
   "healthChecks": [
     {
-      "protocol": "TCP",
-      "gracePeriodSeconds": 600,
-      "intervalSeconds": 30,
+      "protocol": "HTTP",
       "portIndex": 0,
-      "timeoutSeconds": 10,
-      "maxConsecutiveFailures": 2
+      "path": "/",
+      "gracePeriodSeconds": 5,
+      "intervalSeconds": 20,
+      "maxConsecutiveFailures": 3
     }
-  ],
-  "upgradeStrategy": {
-    "minimumHealthCapacity": 0
-  }
+  ]
 }
