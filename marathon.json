@@ -17,7 +17,7 @@
       "forcePullImage": true
     }
   },
-  "instances": 5,
+  "instances": 2,
   "cpus": 0.1,
   "mem": 128,
   "disk": 64,
