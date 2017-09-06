@@ -3,7 +3,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "vishaldenge/pipeline",
+      "image": "10.0.1.86:6555/docker-cicd/nginx",
       "network": "BRIDGE",
       "portMappings": [
         {
